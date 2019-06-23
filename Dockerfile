@@ -46,5 +46,6 @@ RUN sdkmanager 'extras;google;google_play_services'
 
 RUN mkdir -p /var/workspace
 RUN cd /var/workspace
+COPY Parser2.kt /var/workspace
 COPY ChangeProperties.kt /var/workspace
 WORKDIR "var/workspace/"
