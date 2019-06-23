@@ -8,8 +8,12 @@ fun main() {
     p.load(a)
     println(p)
     gradleFileExists("build.gradle.kts")
+    println(1)
     appendTalaiot("build.gradle.kts")
+    println(2)
     createFileTalaiot()
+    println(3)
+
 }
 
 fun gradleFileExists(path: String) = File(path).exists()
@@ -21,6 +25,8 @@ fun appendTalaiot(path: String) {
 
 fun createFileTalaiot() {
     val file = File("talaiot.gradle.kts")
+    println(5)
+
     file.writeText(
         "" +
                 "buildscript {\n" +
@@ -32,7 +38,7 @@ fun createFileTalaiot() {
                 "\n" +
                 "    }\n" +
                 "    dependencies {\n" +
-                "        classpath(\"com.cdsap:talaiot:0.3.2-SNAPSHOT\")\n" +
+                "        classpath(\"com.cdsap:talaiot:0.4.0\")\n" +
                 "    }\n" +
                 "}\n" +
                 "\n" +
@@ -49,4 +55,6 @@ fun createFileTalaiot() {
                 "    }\n" +
                 "}"
     )
+    println(6)
+
 }
