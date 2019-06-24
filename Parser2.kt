@@ -49,7 +49,7 @@ fun createFileTalaiot() {
                 "\n" +
                 "        influxDbPublisher {\n" +
                 "            dbName = \"tracking\"\n" +
-                "            url = \"http://localhost:8081\"\n" +
+                "            url = \"http://bagan-influxdb.default:8086\"\n" +
                 "            urlMetric = \"tracking\"\n" +
                 "        }\n" +
                 "    }\n" +
